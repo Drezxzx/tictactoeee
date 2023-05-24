@@ -1,0 +1,326 @@
+.wrapper {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(52,47,47,1) 50%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(52,47,47,1) 50%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(52,47,47,1) 50%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
+.padre{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.mostrar{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight:bold ;
+    color: rgb(255, 255, 255);
+}
+.boardgeneral {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(231, 4, 4, 0);
+    border: 0;
+    border-radius: 15px;
+    width: 30%;
+    font-size: 6.2rem;
+    animation: pulsate 1.5s infinite alternate;  
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #bc13fe,
+              0 0 0.8rem #bc13fe,
+              0 0 2.8rem #bc13fe,
+              inset 0 0 1.3rem #bc13fe;
+
+}
+
+.color{
+    color: rgb(255, 243, 243);
+}
+
+.boardbox {
+    display: flex;
+    width: 308px;
+    height: 308px;
+    border: 5px 5px 5px 5px solid rgb(252, 246, 246);
+    flex-wrap: wrap;
+    box-sizing: border-box;
+ 
+}
+
+.box {
+   
+    box-shadow: 0 0 .2rem #140c0c,
+    
+   
+    inset 0 0 1.3rem #140c0c;
+    width: 100px;
+    height: 100px;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.box:hover{
+    background-color: rgba(128, 128, 128, 0.137);
+}
+
+.message {
+  font-size: 30px;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.boton{
+  
+  
+}
+
+.colorX {
+  
+ 
+  
+  font: normal 48px/normal "Warnes", Helvetica, sans-serif;
+  color: rgba(255,255,255,1);
+  text-decoration: normal;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+.colorO {
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff0055 , 0 0 70px #ff0055 , 0 0 80px #ff0055 , 0 0 100px #ff0055 ;
+ 
+  font: normal 48px/normal "Warnes", Helvetica, sans-serif;
+  color: rgb(223, 3, 3);
+  text-decoration: normal;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+ 
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+
+.disabled {
+    background-color: lightgray;
+}
+/* <a href="#" class="">dark grey</a> */
+
+.start {
+  
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+  
+.start:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg) shadow(0 0 20px #2926c0) contrast(2) brightness(2);
+
+}
+.start:active {
+    position:relative;
+    top:1px;
+}
+
+.sub-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border: 0px;
+    border-radius: 20px;
+    width: 50%;
+    box-shadow:10px 10px 5px #000000;
+    margin-left: 25px;
+}
+
+.botones{
+    display: flex;
+    padding: 20px;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(53,64,64);
+    background: rgb(45,53,54);
+    background: -moz-linear-gradient(0deg, rgba(45,53,54,1) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(45,53,54,1) 0%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(0deg, rgba(45,53,54,1) 0%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d3536",endColorstr="#000000",GradientType=1);
+    height: 100%;
+   
+}
+
+.hidden{
+    display: none !important;
+}
+button{
+    padding: 20px;
+    margin: 40px;
+    border: 0;
+    border-radius: 15px;
+    width: 60%;
+    cursor: pointer;
+    box-shadow:5px 5px 5px #000000;
+}
+button.primer{
+  border-color: #1431c1;
+  color: #ffffff00;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out; 
+  color: #000000;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.primer:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  }
+
+  button.segundo{
+    border-color: #620606;
+  color: #ffffff00;
+  box-shadow: 0 0 40px 40px #8d0303 inset, 0 0 0 0 #730202;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out; 
+  color: #000000;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.segundo:hover {
+    box-shadow: 0 0 10px 0 #db3434 inset, 0 0 10px 4px #3d0101;
+  }
+
+  .jugadores{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(53,64,64);
+    background: -moz-linear-gradient(0deg, rgba(53,64,64,1) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(53,64,64,1) 0%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(0deg, rgba(53,64,64,1) 0%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#354040",endColorstr="#000000",GradientType=1);
+    height: 100%;
+    flex-direction: column;
+    
+  }
+
+  .players{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: whitesmoke;
+    width: 40%;
+    align-items: flex-start;
+    justify-content: center;
+    border: 0;
+    border-radius: 30px;
+    height: 10%;
+    box-shadow: 5px 5px 5px 5px #000000;
+  }
+
+  .jugadore-1, .jugadore-2{
+    color: #800505;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+
+  }
+  span{
+    color: black;
+  }
+
+
+  .escondido{
+       display: none !important; 
+  }
+
+  .titulo{
+    font-size: 70px;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  .jugadoress{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(to top, #330d35, #750252) ;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .escondidos{
+  display: none !important;
+  }
+
+  .azul{
+    color: #1431c1;
+  }
+
+  .titulos{
+    font-size: 40px;
+    color: whitesmoke;
+    
+  }
+
